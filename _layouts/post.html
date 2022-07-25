@@ -51,17 +51,13 @@ layout: default
 <article>
     <div class="container">
         <div class="row">
-
     <!-- Post Container -->
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 post-container">
-
 				{{ content }}
-
                 <hr style="visibility: hidden;">
-
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
@@ -80,16 +76,11 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
-
-
-                <!--Gitalk评论start  -->
+                <!-- Gitalk评论 start
                 {% if site.gitalk.enable %}
-                <!-- 引入Gitalk评论插件  -->
                 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
                 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
                 <div id="gitalk-container"></div>
-                <!-- 引入一个生产md5的js，用于对id值进行处理，防止其过长 -->
-                <!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
                 <script src="{{ site.baseurl }}/js/md5.min.js"></script>
                 <script type="text/javascript">
                     var gitalk = new Gitalk({
@@ -104,8 +95,7 @@ layout: default
                     gitalk.render('gitalk-container');
                 </script>
                 {% endif %}
-                <!-- Gitalk end -->
-
+                Gitalk end -->
                 {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
                 <div class="comment">
